@@ -17,7 +17,10 @@ int main() {
         printf("%.2f * %.2f = %.2f", num1, num2, num1 * num2);
         break;
     case '/':
-        printf("%.2f / %.2f = %.2f", num1, num2, num1 / num2);
+        if(num2 != 0)
+            printf("%.2f / %.2f = %.2f", num1, num2, num1 / num2);
+        else
+            printf("Error: Division by zero!");
         break;
     case '+':
         printf("%.2f + %.2f = %.2f", num1, num2, num1 + num2);
